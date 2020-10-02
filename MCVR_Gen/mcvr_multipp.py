@@ -1,6 +1,4 @@
-import csv
-import os
-import random
+import csv, os, random
 from time import time
 from faker import Faker
 import glob

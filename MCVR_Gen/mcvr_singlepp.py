@@ -1,9 +1,6 @@
-import csv
-import os
-import random
+import csv, os, random, glob
 from time import time
 from faker import Faker
-import glob
 from tqdm import tqdm 
 from time import sleep
 
@@ -74,7 +71,7 @@ if __name__ == '__main__':
 
     create_csv_file()
 
-    for file in os.listdir('./files'):  # use the directory name here
+    for file in os.listdir('./files'):
 
         file_name, file_ext = os.path.splitext(file)
 
@@ -88,8 +85,8 @@ if __name__ == '__main__':
                     sleep(0.0001)
 
                 for line in csv_reader:
-                    with open(newfile, 'a') as new_txt:    #new file has .txt extn
-                        txt_writer = csv.writer(new_txt, delimiter = '\t') #writefile
+                    with open(newfile, 'a') as new_txt:
+                        txt_writer = csv.writer(new_txt, delimiter = '\t')
                         txt_writer.writerow(line) 
 
 

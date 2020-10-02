@@ -1,6 +1,4 @@
-import csv
-import os
-import random
+import csv, os, random
 from time import time
 from faker import Faker
 
@@ -58,5 +56,3 @@ if __name__ == '__main__':
     create_csv_file()
     elapsed = time() - start
     print('created csv file time: {}'.format(elapsed))
-
-    ### create a ballot file generator to go with  the voter files setup. precinct name, split.
