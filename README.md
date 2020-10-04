@@ -69,27 +69,27 @@ Being able to use fake data to represent actual data is always the safest route 
 
 ### Prerequisites
 
-Python 3
-* pip
-```sh
-pip install python3
-```
+* [Python3](https://www.python.org/downloads/)
 
 ### Installation
 
 1. Install Python 3
-2. Clone the repo
 ```sh
-git clone https://github.com/Danewilkerson/Election-File-Generators.git
+pip install python3
 ```
-3. Install Pandas packages
+2. Install Pandas
 ```sh
 pip install pandas
 ```
-4. install faker
+3. install faker
 ```sh
-pip install Faker;
+pip install Faker
 ```
+4. Clone the repo
+```sh
+git clone https://github.com/Danewilkerson/Election-File-Generators.git
+```
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
