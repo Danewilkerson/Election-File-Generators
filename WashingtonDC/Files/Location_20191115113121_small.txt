@@ -1,0 +1,19 @@
+Precinct	PollingPlace	PollName	PollAddress	LocationType
+136	136	All Souls Episcopal Church	2300 Cathedral Ave NW	V
+136.01	136	All Souls Episcopal Church	2300 Cathedral Ave NW	V
+ 10	10	Horace Mann Elementary School	4430 Newark St NW	V
+ 10.01	10	Horace Mann Elementary School	4430 Newark St NW	V
+ 10.02	10	Horace Mann Elementary School	4430 Newark St NW	V
+ 10.03	10	Horace Mann Elementary School	4430 Newark St NW	V
+100	100	Thomas Elementary School	650 Anacostia Ave NE	V
+100.01	100	Thomas Elementary School	650 Anacostia Ave NE	V
+100.02	100	Thomas Elementary School	650 Anacostia Ave NE	V
+101	101	River Terrace Education Campus	420 34Th St NE	V
+101.01	101	River Terrace Education Campus	420 34Th St NE	V
+102	102	Benning Public Library	3935 Benning Rd NE	V
+102.01	102	Benning Public Library	3935 Benning Rd NE	V
+102.02	102	Benning Public Library	3935 Benning Rd NE	V
+102.03	102	Benning Public Library	3935 Benning Rd NE	V
+135.01	135	Mt. Bethel Baptist Church	75 Rhode Island Ave NW	V
+135.02	135	Mt. Bethel Baptist Church	75 Rhode Island Ave NW	V
+135.03	135	Mt. Bethel Baptist Church	75 Rhode Island Ave NW	V

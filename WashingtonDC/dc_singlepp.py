@@ -1,4 +1,4 @@
-import csv, os, random, glob
+import csv, os, random, shutil
 from time import time
 from faker import Faker
 from tqdm import tqdm 
@@ -12,7 +12,7 @@ fake = Faker()
 
 def create_csv_file():
 
-    with open('./files/DC_Election_File.csv', 'w', newline='') as csvfile:
+    with open('./files/Voter_20191115113037_small.csv', 'w', newline='') as csvfile:
         fieldnames = [
                     "Systemid",
                     "Voterid",
@@ -135,10 +135,10 @@ if __name__ == '__main__':
         file_name, file_ext = os.path.splitext(file)
 
         if file_ext == '.csv':
-            with open('./files/DC_Election_File.csv','r') as csv_file:
+            with open('./files/Voter_20191115113037_small.csv','r') as csv_file:
                 csv_reader = csv.reader(csv_file)
 
-                newfile = ('./files/DC_Election_File' + '.txt')
+                newfile = ('./files/Voter_20191115113037_small' + '.txt')
 
                 for i in tqdm(range(int(RECORD_COUNT)), ncols = 100, desc ="File Conversion"): 
                     sleep(0.0001)
@@ -147,5 +147,13 @@ if __name__ == '__main__':
                     with open(newfile, 'a') as new_txt:
                         txt_writer = csv.writer(new_txt, delimiter = '\t')
                         txt_writer.writerow(line) 
+
+os.remove("./files/Voter_20191115113037_small.csv")
+
+shutil.make_archive("DC_VRS", 'zip', './files')
+
+os.remove("./files/Voter_20191115113037_small.txt")
+
+
 
 

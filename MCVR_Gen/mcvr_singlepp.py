@@ -89,4 +89,7 @@ if __name__ == '__main__':
                         txt_writer = csv.writer(new_txt, delimiter = '\t')
                         txt_writer.writerow(line) 
 
+os.remove("./files/MCVR_Election_File.csv")
+        
+
 
